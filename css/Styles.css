@@ -1,0 +1,380 @@
+/* Base Elements */
+* {
+box-sizing: border-box;
+color: white;
+}
+html {
+	background-color: black;
+}
+
+body {
+font-family: 'Kumbh Sans', sans-serif;
+}
+
+img {
+max-width: 100%;
+
+}
+
+header {
+background-color: rgb(27, 27, 27);
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+
+a:hover {
+background-color: rgba(255, 255, 255, 0.637);
+
+
+transition-duration: .2s;
+
+}
+
+
+p, h1, h2, h3, .contact-info, .copyright, .to-top, .skills, td {
+text-align: center;
+letter-spacing: 1.6px;
+padding: 15px 0;
+margin: 0 auto;
+max-width: 80%;
+}
+
+h2 {
+max-width: 90%;
+}
+
+q {
+font-style: italic;
+display: block;
+text-align: center;
+font-size: 1.5em;
+color: white;
+background-color: rgba(0, 0, 0, 0.246);
+margin: auto;
+text-align: center;
+letter-spacing: 1.6px;
+padding: 15px 10px;
+}
+
+h3 {
+
+max-width: 60%;
+
+}
+
+figcaption {
+
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+
+
+/* Base Style Layout */
+
+.wrap {
+min-height: calc(100vh - 89px);
+
+}
+
+.main-header a
+ {
+display: block;
+padding: 15px;
+margin: 5px;
+border: white solid 5px;
+border-radius: 10px;
+
+
+
+}
+
+.main-nav {
+margin-bottom: 15px;
+
+
+}
+
+.main-header,
+.main.content {
+text-align: center;
+}
+
+.name {
+	font-size: 3em;
+	margin: auto;
+	padding-top: 15px;
+	color: white;
+	}
+
+.main-header li {
+font-size: 2em;
+}
+
+
+
+
+.tagline,
+a:hover {
+
+	text-shadow: 0 0 10px rgb(255, 0, 98); 
+
+
+}
+
+.banner {
+margin-bottom: 40px;
+}
+
+.tag {
+background: url(../images/code.png);
+background-size: cover;
+margin-top: 30px;
+height: 400px;
+max-width: 75%;
+margin: auto;
+margin-top: 20px;
+border-radius: 10%;
+position: relative;
+padding-top: 30px;
+}
+.profile-picture {
+	border-radius: 50%;
+	height:150px;
+	margin: auto;
+	display: block;
+	box-shadow:  1px 1px 2px 1px rgba(255, 0, 98, 0.335),
+	9px 9px 2px 1px rgba(0, 0, 255, .2);
+	
+	}
+
+.main-content {
+max-width: 90%;
+
+margin: auto;
+background-color:  rgb(27, 27, 27);
+padding-bottom: 30px;
+}
+
+.blurb {
+	margin-bottom: 50px;
+	border-bottom: 3px solid white;
+	border-top: 1px solid white;
+
+	
+}
+
+.content-table  {
+
+	margin: 0 auto;
+	border-collapse: collapse;
+	text-align: center;
+
+	
+}
+
+.content-table td  {
+
+	margin: 20px auto;
+	text-align: left;
+	font-size: 1.5em;
+	letter-spacing:  .2em;
+	padding-right: 30px;
+}
+
+
+
+
+
+
+
+.main-footer {
+max-width: 90%;
+margin: auto;
+
+}
+
+.to-top {
+float: left;
+border: none;
+margin: auto;
+}
+
+.footer-name {
+	float: right;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES  */
+
+@media (min-width: 768px) {
+
+.col {
+float: left;
+padding: 10px;
+max-width: 50%;
+}
+
+
+.banner {
+margin-top: 180px;
+}
+
+.tag {
+	max-width: 90%;
+	
+
+}
+
+.blurb {
+	height: 130px;
+
+}
+
+
+figcaption {
+
+	position: absolute;
+	width: 350px;
+	height: auto;	
+}
+
+q {
+
+	font-size: 2.3em;
+	text-align: left;
+	padding-left: 30px;
+	font-weight: 300;
+	padding: 25px;
+
+
+
+}
+
+
+
+.main-header {
+background-color:  rgb(27, 27, 27);
+z-index: 300;
+width: 100%;
+}
+
+.profile-picture
+{
+display: block;
+width: 35%;
+height: auto;
+
+float: right;
+}
+
+.tag {
+padding: 80px 25px 0 0 ;
+width: 100%;
+
+}
+
+
+
+.wrap {
+	min-height: 20px;
+	}
+
+
+
+.container {
+width: 90%;
+margin: 0 auto;
+
+}
+.main-header {
+	position: fixed;
+	background:  rgb(27, 27, 27);;
+	top: 0;
+	box-shadow: 0 1px 4px rgba(255, 255, 255, 0.938);
+
+
+}
+.main-header li,
+.name {
+	font-size: 1.5em;
+	display: inline-block;
+	
+	}
+
+
+
+
+
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}  
+
+}
+
+
+@media (min-width: 1024px) {
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}  
+
+	.to-top {
+	display: none;	
+	}
+
+	.main-nav {
+		float: right;
+		margin: 0 auto;
+	}
+	.name {
+		float: left;
+	}
+
+	.tag {
+
+		width: 90%;
+		max-width: 1126px;
+		border-radius: 5px;
+	}
+
+
+	.container {
+		width: 80%;
+		margin: auto;
+		max-width: 1150px;
+		
+		}
+
+		.col1,
+		.col2,
+		.col3 {
+			max-width: 33.333%;	
+			}
+
+	.profile-picture {
+max-height: 287px;
+width: auto;
+
+	}
+
+}
